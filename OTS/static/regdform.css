@@ -1,0 +1,107 @@
+/* static/css/styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Top section styles */
+.top {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sitename h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Content section styles */
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* User status styles */
+.userStatus {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.userStatus a {
+    color: #4CAF50;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.userStatus a:hover {
+    text-decoration: underline;
+}
+
+/* Success and error messages */
+.userStatus.success {
+    background-color: #e7f7e7;
+    color: #2c662d;
+    border-color: #2c662d;
+}
+
+.userStatus.error {
+    background-color: #fde7e7;
+    color: #a94442;
+    border-color: #a94442;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .top {
+        padding: 20px 0;
+    }
+
+    .sitename h1 {
+        font-size: 1.5em;
+    }
+
+    .content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .userStatus {
+        padding: 15px;
+    }
+}

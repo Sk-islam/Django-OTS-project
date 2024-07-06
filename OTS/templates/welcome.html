@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+
+{% block title %} Welcome to Online Testing System {% endblock title %}
+
+{% block top %}
+<a href="{% url 'OTS:registrationForm' %}">Signup</a>
+<a href="{% url 'OTS:login' %}">Login</a>
+{% endblock %}
+
+{% block content %}
+<h2>Welcome to the Online Testing System!</h2>
+<p>
+    Our system is designed to provide a seamless experience for candidates to take tests and for administrators to manage test results effectively. Whether you are a student preparing for exams or an educator conducting assessments, our platform offers robust features to meet your needs.
+</p>
+<p>
+    Explore our features:
+    <ul>
+        <li>Efficient user registration and login process.</li>
+        <li>Secure test-taking environment with timed assessments.</li>
+        <li>Comprehensive test analytics and performance tracking.</li>
+        <li>Customizable test creation and management.</li>
+    </ul>
+</p>
+<p>
+    Join our community today and experience a new way of conducting tests online!
+</p>
+{% endblock %}

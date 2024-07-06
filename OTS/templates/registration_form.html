@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+
+{% block title %}OTS-Registration Form {% endblock title %}
+
+
+{% block top %}
+ <!--<a href="{% url 'OTS:login' %}">Login</a>-->
+{% endblock %}
+
+{% block content %}
+<div class="all-forms">
+    <form method="post" action="{% url 'OTS:storecandidate' %}">
+        {% csrf_token %}
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    Already have an account,<a href="{% url 'OTS:login' %}">Click here</a>
+</div>
+{% endblock %}

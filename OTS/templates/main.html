@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{%block title %} {% endblock %}</title>
+    <!-- Add your CSS files here -->
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="stylesheet" href="{%static 'registration.css'%}">
+    <link rel="stylesheet" href="{%static 'regdform.css'%}">
+    <link rel="stylesheet" href="{%static 'login.css'%}">
+    <link rel="stylesheet" href="{%static 'testpaper.css'%}">
+    <link rel="stylesheet" href="{%static 'home.css'%}">
+    <link rel="stylesheet" href="{%static 'testresult.css'%}">
+    
+</head>
+<body>
+    <div class="top">
+        <div class="sitename"><h1>Online Testing System</h1></div>
+        <div class="menu">
+            {% block top %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+    <div class="content"> 
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+
+</body>
+</html>
